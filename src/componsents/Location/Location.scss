@@ -1,0 +1,52 @@
+/** @format */
+
+.location {
+     cursor: pointer;
+     border: 1px solid greenyellow;
+     padding: 5px;
+     border-radius: 5px;
+     margin: 20px 0;
+     width: 100%;
+
+     h1 {
+         font-weight: 600;
+     }
+
+     @media (min-width: 768px) {
+          width: 700px;
+     }
+
+     @media (min-width: 1028px) {
+          width: 900px;
+     }
+
+     
+
+     .details {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          padding-bottom: 20px;
+
+          @media (min-width: 768px) {
+              display: none;
+          }
+
+          p {
+               font-size: 16px;
+               
+
+               @media (min-width: 768px) {
+                    font-size: 19px;
+               }
+          }
+     }
+
+     @media (min-width: 768px) {
+          .details.active {
+               display: flex;
+               flex-direction: column;
+          }
+     }
+}
